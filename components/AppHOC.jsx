@@ -3,7 +3,7 @@ import React from 'react'
 import Navbar from './Navbar'
 import SidebarLeft from "./SidebarLeft";
 import SidebarRight from "./SidebarRight";
-import HeroSection from './HeroSection';
+import Tab from './Tab';
 
 const AppHOC = ({ children }) => {
   return (
@@ -11,9 +11,10 @@ const AppHOC = ({ children }) => {
       <Navbar />
       <div className="mt-[75px] flex gap-10 max-w-[1280px] mx-auto">
         <SidebarLeft />
-        <HeroSection>
+        <div className='flex-1'>
+          <Tab />
           {children}
-        </HeroSection>
+        </div>
         <SidebarRight />
       </div>
     </div>
