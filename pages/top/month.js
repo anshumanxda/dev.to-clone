@@ -1,5 +1,24 @@
-import Month from "../../components/Top/Month";
+import AppHOC from "components/AppHOC";
+import TopCard from "components/TopCard";
+import Card from "components/Card";
 
-export default function month() {
-  return <Month />;
+import useTopPost from "reactQuery/useTopPost";
+
+export default function Month() {
+  const { data, isLoading } = useTopPost("month");
+
+  return (
+    <AppHOC>
+      {!isLoading ? (
+        <>
+          <TopCard data={data?.data[0]} />
+          {data?.data?.slice(1)?.map((item, index) => (
+            <Card key={index} data={item} />
+          ))}
+        </>
+      ) : (
+        "Loading..."
+      )}
+    </AppHOC>
+  );
 }

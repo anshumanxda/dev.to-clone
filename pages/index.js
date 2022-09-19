@@ -1,5 +1,24 @@
-import Home from "../components/Home";
+import AppHOC from "components/AppHOC";
+import TopCard from "components/TopCard";
+import Card from "components/Card";
 
-export default function index() {
-  return <Home />;
+import useRelevantPost from "reactQuery/useRelevantPost";
+
+export default function Home() {
+  const { data, isLoading } = useRelevantPost();
+
+  return (
+    <AppHOC>
+      {!isLoading ? (
+        <>
+          <TopCard data={data?.data[0]} />
+          {data?.data?.slice(1)?.map((item, index) => (
+            <Card key={index} data={item} />
+          ))}
+        </>
+      ) : (
+        "Loading..."
+      )}
+    </AppHOC>
+  );
 }

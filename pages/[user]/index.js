@@ -1,14 +1,15 @@
-// import Router from "next/router";
+import { useEffect } from "react";
+import { useRouter } from "next/router";
 
-const index = () => {
-  // const router = useRouter();
-  // const { user } = router.query;
+const User = () => {
+  const router = useRouter();
+  const { user } = router.query;
 
-  // useEffect(() => {
-  // window.location.href = `https://dev.to/${""}`;
-  // }, [user]);
+  useEffect(() => {
+    window.location.href = `https://dev.to/${""}`;
+  }, [user]);
 
-  return <div>bruh</div>;
+  return <div></div>;
 };
 
-export default index;
+export default User;

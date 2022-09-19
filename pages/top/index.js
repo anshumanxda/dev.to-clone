@@ -1,8 +1,9 @@
-import React from "react";
-// import Router from "next/router";
+import { useEffect } from "react";
 
-const index = () => {
-  // Router.push("top/week");
+const Top = () => {
+  useEffect(() => {
+    window.location.href = "/top/week";
+  }, []);
 };
 
-export default index;
+export default Top;
