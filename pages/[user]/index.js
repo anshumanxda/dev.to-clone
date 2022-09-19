@@ -5,7 +5,7 @@ const User = () => {
   const router = useRouter();
   const { user } = router.query;
   useEffect(() => {
-    window.location.href = `https://dev.to/${user}`;
+    window.location.assign(`https://dev.to/${user}`);
   }, [user]);
 };
 
