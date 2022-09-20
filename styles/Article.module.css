@@ -4,7 +4,7 @@
 
 .container pre {
   background-color: black;
-  color: white;
+  color: rgb(192, 192, 192);
   padding: 20px;
   overflow-x: scroll;
   margin-block: 20px;
@@ -16,10 +16,40 @@
 
 .content p {
   font-size: 19px;
+  margin-bottom: 20px;
 }
 
 .content h2 {
-  font-size: 2.5em;
+  font-size: 30px;
   font-weight: 600;
-  margin-block: 20px 5px;
+  margin-block: 10px;
+}
+
+.content h3 {
+  font-size: 25px;
+  font-weight: 600;
+  margin-block: 10px;
+}
+
+.content blockquote {
+  border-left: 4px solid #d6d6d7;
+  margin: 0 0 20px;
+  padding: 0 0 0 20px;
+}
+
+.content ol {
+  list-style-type: number;
+}
+
+.content a {
+  color: #3b49df;
+  text-decoration: underline;
+}
+
+.content img {
+  margin-block: 20px;
+}
+
+.content em {
+  font-size: 20px;
 }

@@ -3,7 +3,6 @@ import useUserInfo from 'reactQuery/useUserInfo'
 
 const UserInfo = ({ id }) => {
   const { data, isLoading } = useUserInfo(id)
-  console.log(data)
   return (
     <div className='bg-white rounded-lg sticky top-[75px] overflow-hidden'>
       <div className='h-7 bg-black' />

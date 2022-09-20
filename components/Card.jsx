@@ -4,11 +4,11 @@ import moment from "moment/moment";
 import HeartSvg from "assets/images/heart.svg";
 import CommentSvg from "assets/images/comment.svg";
 
-const Card = ({ noBorder, data }) => {
+const Card = ({ noBorder, data, search }) => {
   return (
     <Link href={`${data?.path}`}>
       <div
-        className={`flex gap-3 mt-4 cursor-pointer ${!noBorder && "border px-7 py-7 bg-white rounded-lg"
+        className={`flex gap-3 mt-2 cursor-pointer ${!noBorder && "border px-7 py-7 bg-white rounded-lg"
           } `}
       >
         <img
@@ -21,7 +21,7 @@ const Card = ({ noBorder, data }) => {
           <p className="text-xs text-gray-600">
             {moment(data?.published_timestamp).format("lll")}
           </p>
-          <h2 className="text-3xl font-semibold my-3">{data?.title}</h2>
+          <h2 className={`${search ? "text-2xl" : "text-3xl"} font-semibold my-3`}>{data?.title}</h2>
           <div className="flex gap-2">
             {data?.tag_list?.map((item, index) => (
               <p

@@ -29,3 +29,17 @@ export const fetchUserAllArticles = (username) => {
 export const fetchArticleReactions = (id) => {
   return axios.get(`${URL}reactions?article_id=${id}`);
 };
+
+export const search = (keyword, sort = " ", type = "Article") => {
+  let _keyword = "";
+  for (var i = 0; i < keyword.length; i++) {
+    if (keyword[i] === " ") {
+      _keyword += "+";
+    } else {
+      _keyword += keyword[i];
+    }
+  }
+  return axios.get(
+    `${URL}search/feed_content?per_page=60&page=0&class_name=${type}&search_fields=${_keyword}&sort_direction=${sort}`
+  );
+};

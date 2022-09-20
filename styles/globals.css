@@ -9,3 +9,66 @@ body {
 .tab-style {
   @apply text-base text-gray-700 hover:bg-white hover:text-blue-600 px-3 py-2 rounded-lg;
 }
+
+.search-sidebar {
+  @apply hover:bg-white px-3 py-2 mt-2 rounded-md hover:text-blue-600;
+}
+
+.content span.kd {
+  color: #f39c12;
+}
+
+.content span.k {
+  color: #f39c12;
+}
+
+.content span.nx {
+  color: #7ed07e;
+}
+
+.content span.n {
+  color: #7ed07e;
+}
+
+.content span.nc {
+  color: #7ed07e;
+}
+
+.content span.o {
+  color: #f9690e;
+}
+
+.content span.nt {
+  color: #f9690e;
+}
+
+.content span.sr {
+  color: #f2ca26;
+}
+
+.content span.se {
+  color: #dda0dd;
+}
+.content span.c1 {
+  color: #808080;
+}
+
+.heart-svg {
+  padding: 10px;
+  border-radius: 100%;
+}
+
+.heart-svg:hover {
+  color: red;
+  background-color: rgba(247, 179, 179, 0.405);
+}
+
+.saved-svg {
+  padding: 10px;
+  border-radius: 100%;
+}
+
+.saved-svg:hover {
+  color: rgb(45, 45, 225);
+  background-color: rgb(203, 203, 247);
+}
