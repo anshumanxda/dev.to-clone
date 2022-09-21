@@ -6,7 +6,7 @@ const Sidebar = ({ }) => {
   const router = useRouter()
   const { q, type, sort } = router.query
   return (
-    <div className='w-[240px] mt-3'>
+    <div className='w-[240px]'>
       <ul>
         <Link href={`/search/?q=${q}&type=Article&sort=${sort}`}>
           <li className={`search-sidebar ${type === undefined || type === 'Article' ? "bg-white font-bold" : ""}`}>Posts</li>
@@ -14,7 +14,7 @@ const Sidebar = ({ }) => {
         <Link href={`/search/?q=${q}&type=PodcastEpisode&sort=${sort}`}>
           <li className={`search-sidebar ${type === 'PodcastEpisode' ? "bg-white font-bold" : ""} `}>Podcasts</li>
         </Link>
-        <Link href={`/search/?q=${q}&type=User&sort=${sort}`}>
+        <Link href={`/search/?q=${q}&type=User`}>
           <li className={`search-sidebar  ${type === 'User' ? "bg-white font-bold" : ""}`}>People</li>
         </Link>
       </ul>

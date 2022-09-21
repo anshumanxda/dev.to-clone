@@ -1,15 +1,8 @@
-import { useRouter } from "next/router";
+import Main from "components/IndividualArticle/Main";
+import Reactions from "components/IndividualArticle/Reactions";
+import UserInfo from "components/IndividualArticle/UserInfo";
 
-import useIndividualArticle from "../../reactQuery/useIndividualArticle";
-
-import Main from "./Main";
-import Reactions from "./Reactions";
-import UserInfo from "./UserInfo";
-
-const IndividualArticle = () => {
-  const router = useRouter();
-  const { user, slug } = router.query;
-  const { data, isLoading } = useIndividualArticle(user, slug);
+const IndividualArticle = ({ data, isLoading }) => {
 
   if (isLoading) {
     return "Loading..";

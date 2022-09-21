@@ -39,7 +39,10 @@ export const search = (keyword, sort = " ", type = "Article") => {
       _keyword += keyword[i];
     }
   }
-  return axios.get(
-    `${URL}search/feed_content?per_page=60&page=0&class_name=${type}&search_fields=${_keyword}&sort_direction=${sort}`
-  );
+
+  const _URL = `${URL}search/feed_content?per_page=60&page=0&class_name=${type}&search_fields=${_keyword}`;
+  const URL_WITH_SORT = `${_URL}&sort_by=published_at&sort_direction=${sort}`;
+  const FINAL_URL = type !== "User" ? URL_WITH_SORT : _URL;
+
+  return axios.get(FINAL_URL);
 };

@@ -3,7 +3,7 @@ import { useRouter } from "next/router";
 import Top from "components/Search/Top";
 import Navbar from "components/Navbar";
 import Sidebar from "components/Search/Sidebar";
-import Card from "components/Card";
+import Main from "../components/Search/Main";
 
 import useSearch from "reactQuery/useSearch";
 
@@ -16,17 +16,9 @@ const Search = () => {
       <Navbar />
       <div className="max-w-[1000px] mx-auto">
         <Top searchedText={q} sort={sort} />
-        <div className="flex gap-5">
+        <div className="flex gap-5 mt-3">
           <Sidebar type={type} />
-          {!isLoading ? (
-            <div className="flex-1">
-              {data?.data?.result?.map((item, index) => (
-                <Card key={index} data={item} search />
-              ))}
-            </div>
-          ) : (
-            "Loading...."
-          )}
+          <Main data={data} isLoading={isLoading} />
         </div>
       </div>
     </div>
