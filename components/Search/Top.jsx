@@ -6,7 +6,7 @@ const Top = ({ searchedText }) => {
   const router = useRouter();
   const { q, type, sort } = router.query;
   return (
-    <div className="flex justify-between mt-[80px]">
+    <div className="flex justify-between">
       <h2 className="font-semibold text-3xl">
         Search results for {searchedText}
       </h2>

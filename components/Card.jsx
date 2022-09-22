@@ -21,7 +21,7 @@ const Card = ({ noBorder, data, search }) => {
           <p className="text-xs text-gray-600">
             {moment(data?.published_timestamp).format("lll")}
           </p>
-          <h2 className={`${search ? "text-2xl" : "text-3xl"} font-semibold my-3`}>{data?.title}</h2>
+          <h2 className={`${search ? "text-2xl" : "text-[26px]"} font-semibold my-3`}>{data?.title}</h2>
           <div className="flex gap-2">
             {data?.tag_list?.map((item, index) => (
               <p

@@ -32,7 +32,7 @@ const Main = ({ data }) => {
           ))}
         </div>
 
-        <div className={`${styles.content} content my-10`}>
+        <div className={`content my-10`}>
           {parser(data?.body_html)}
         </div>
       </div>

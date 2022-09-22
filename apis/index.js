@@ -46,3 +46,9 @@ export const search = (keyword, sort = " ", type = "Article") => {
 
   return axios.get(FINAL_URL);
 };
+
+export const lisiting = (category = " ") => {
+  return axios.get(
+    `${URL}api/listings?category=${category}&listing_search=&page=0&per_page=75&tag_boolean_mode=all`
+  );
+};

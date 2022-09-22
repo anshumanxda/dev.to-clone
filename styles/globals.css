@@ -1,9 +1,11 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 body {
   background-color: #1717170d;
+  font-family: "Lato", sans-serif;
 }
 
 .tab-style {
@@ -12,6 +14,14 @@ body {
 
 .search-sidebar {
   @apply hover:bg-white px-3 py-2 mt-2 rounded-md hover:text-blue-600 cursor-pointer;
+}
+
+.input-box {
+  @apply border border-gray-300 w-[400px] h-[40px] px-3 rounded-md outline-none focus:border-blue-700 text-[15px];
+}
+
+.listing-sidebar-items {
+  @apply hover:bg-violet-100 hover:text-blue-900 p-[8px] cursor-pointer rounded-md mt-1;
 }
 
 .content span.kd {
@@ -71,4 +81,58 @@ body {
 .saved-svg:hover {
   color: rgb(45, 45, 225);
   background-color: rgb(203, 203, 247);
+}
+
+.content svg {
+  display: none;
+}
+
+.content p {
+  font-size: 19px;
+  margin-bottom: 20px;
+}
+
+.content h2 {
+  font-size: 30px;
+  font-weight: 600;
+  margin-block: 10px;
+}
+
+.content h3 {
+  font-size: 25px;
+  font-weight: 600;
+  margin-block: 10px;
+}
+
+.content blockquote {
+  border-left: 4px solid #d6d6d7;
+  margin: 0 0 20px;
+  padding: 0 0 0 20px;
+}
+
+.content ol {
+  list-style-type: number;
+}
+
+.content ul {
+  list-style-type: disc;
+  margin-left: 1rem;
+}
+
+.content a {
+  color: #3b49df;
+  text-decoration: underline;
+}
+
+.content img {
+  margin-block: 20px;
+}
+
+.content em {
+  font-size: 20px;
+}
+
+.content.listing p {
+  font-size: 16px;
+  margin-bottom: 0.6px;
 }

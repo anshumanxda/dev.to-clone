@@ -7,7 +7,7 @@ import Tab from './Tab';
 
 const AppHOC = ({ children }) => {
   return (
-    <div className='mb-20'>
+    <div className='mb-20' id="app">
       <Navbar />
       <div className="mt-[75px] flex gap-10 max-w-[1280px] mx-auto">
         <SidebarLeft />

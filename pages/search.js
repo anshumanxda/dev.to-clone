@@ -14,7 +14,7 @@ const Search = () => {
   return (
     <div>
       <Navbar />
-      <div className="max-w-[1000px] mx-auto">
+      <div className="max-w-[1000px] mx-auto mt-[80px]">
         <Top searchedText={q} sort={sort} />
         <div className="flex gap-5 mt-3">
           <Sidebar type={type} />

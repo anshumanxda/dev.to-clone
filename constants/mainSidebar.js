@@ -19,65 +19,81 @@ export const SIDEBAR_DATA = [
   {
     title: "Home",
     icon: <HomeSvg />,
+    link: "/",
   },
   {
     title: "Reading List",
     icon: <ReadingListSvg />,
+    link: "/",
   },
   {
     title: "Listings",
     icon: <ListingSvg />,
+    link: "/listings",
   },
   {
     title: "Podcasts",
     icon: <PodcastSvg />,
+    link: "/",
   },
   {
     title: "Videos",
     icon: <VideosSvg />,
+    link: "/",
   },
   {
     title: "Tags",
     icon: <TagsSvg />,
+    link: "/",
   },
   {
     title: "FAQ",
     icon: <FaqSvg />,
+    link: "/",
   },
   {
     title: "Forem Shop",
     icon: <ForemShopSvg />,
+    link: "/",
   },
   {
     title: "Sponsors",
     icon: <SponsorsSvg />,
+    link: "/",
   },
   {
     title: "About",
     icon: <AboutSvg />,
+    link: "/",
   },
   {
     title: "Contact",
     icon: <ContactSvg />,
+    link: "/",
   },
   {
     title: "Guide",
     icon: <GuidesSvg />,
+    link: "/",
   },
   {
     title: "Software Comparisons",
     icon: <SoftwareComparisonsSvg />,
+    link: "/",
   },
   {
     title: "Code of Conduct",
     icon: <CodeOfConductSvg />,
+    link: "/",
   },
   {
     title: "Privacy Policy",
     icon: <PrivacyPolicySvg />,
+    link: "/",
   },
   {
     title: "Terms of Use",
     icon: <TermsOfUseSvg />,
+    link: "/",
   },
 ];
