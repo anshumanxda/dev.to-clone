@@ -19,12 +19,12 @@ const Navbar = () => {
             <img className='cursor-pointer h-10' src="https://dev-to-uploads.s3.amazonaws.com/uploads/logos/resized_logo_UQww2soKuUsjaOGNB38o.png" alt="" />
           </Link>
           <form onSubmit={onSubmit}>
-            <input value={search} onChange={(e) => setSearch(e.target.value)} className='border border-gray-300 w-[400px] h-[40px] px-3 text-lg rounded-md outline-none focus:border-violet-700' type="text" placeholder='Search....' />
+            <input value={search} onChange={(e) => setSearch(e.target.value)} className='border border-gray-300 w-[400px] h-[40px] px-3 rounded-md outline-none focus:border-blue-700 text-[15px]' type="text" placeholder='Search....' />
           </form>
         </div>
 
         <div className='flex gap-5 items-center'>
-          <button className='border-violet-700 border text-lg px-3 py-1 rounded-md'>Create Post</button>
+          <button className='border-blue-700 border text-[15px] text-blue-800 font-semibold px-3 py-2 rounded-md'>Create Post</button>
           <RiNotification3Line size='25' />
           <RiUserSmileLine size='25' />
         </div>

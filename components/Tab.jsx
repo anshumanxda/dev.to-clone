@@ -8,20 +8,20 @@ const Tab = () => {
     <div className="flex justify-between" >
       <div className="flex gap-1 items-center">
         <Link href="/">
-          <p className={`tab-style ${route === "/" ? "font-semibold underline" : ""}`}>
+          <p className={`tab-style ${route === "/" ? "font-bold" : ""}`}>
             Relevant
           </p>
         </Link>
         <Link href="/latest">
           <p
-            className={`tab-style ${route === "/latest" ? "font-semibold underline" : ""}`}
+            className={`tab-style ${route === "/latest" ? "font-bold" : ""}`}
           >
             Latest
           </p>
         </Link>
         <Link href="/top/week">
           <p
-            className={`tab-style ${route.includes("/top") ? "font-semibold underline" : ""
+            className={`tab-style ${route.includes("/top") ? "font-bold" : ""
               }`}
           >
             Top
@@ -34,7 +34,7 @@ const Tab = () => {
             <div className="flex gap-1 items-center">
               <Link href="/top/week">
                 <p
-                  className={`tab-style ${route === "/top/week" ? "font-semibold underline" : ""
+                  className={`tab-style ${route === "/top/week" ? "font-bold" : ""
                     }`}
                 >
                   Week
@@ -42,7 +42,7 @@ const Tab = () => {
               </Link>
               <Link href="/top/month">
                 <p
-                  className={`tab-style ${route === "/top/month" ? "font-semibold underline" : ""
+                  className={`tab-style ${route === "/top/month" ? "font-bold" : ""
                     }`}
                 >
                   Month
@@ -50,7 +50,7 @@ const Tab = () => {
               </Link>
               <Link href="/top/year">
                 <p
-                  className={`tab-style ${route === "/top/year" ? "font-semibold underline" : ""
+                  className={`tab-style ${route === "/top/year" ? "font-bold" : ""
                     }`}
                 >
                   Year
@@ -58,7 +58,7 @@ const Tab = () => {
               </Link>
               <Link href="/top/infinity">
                 <p
-                  className={`tab-style ${route === "/top/infinity" ? "font-semibold underline" : ""
+                  className={`tab-style ${route === "/top/infinity" ? "font-bold" : ""
                     }`}
                 >
                   Infinity

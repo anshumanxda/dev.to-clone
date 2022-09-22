@@ -7,7 +7,7 @@ body {
 }
 
 .tab-style {
-  @apply text-base text-gray-700 hover:bg-white hover:text-blue-600 px-3 py-2 rounded-lg cursor-pointer;
+  @apply text-lg text-gray-700 hover:bg-white hover:text-blue-600 px-3 py-2 rounded-lg cursor-pointer;
 }
 
 .search-sidebar {
