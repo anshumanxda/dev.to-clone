@@ -12,7 +12,7 @@ const Navbar = () => {
     router.push(`/search?q=${search}`)
   }
   return (
-    <div className='border-b pb-2 bg-white fixed top-0 left-0 right-0 z-10'>
+    <div className='border-b pb-2 bg-white fixed top-0 left-0 right-0 z-10 mx-3'>
       <div className='flex justify-between items-center pt-3 max-w-[1280px] mx-auto'>
         <div className='flex gap-5 items-center'>
           <Link href='/'>
