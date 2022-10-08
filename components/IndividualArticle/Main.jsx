@@ -2,8 +2,6 @@ import React from 'react'
 import parser from 'html-react-parser'
 import moment from 'moment/moment'
 
-import styles from 'styles/Article.module.css'
-
 const Main = ({ data }) => {
   return (
     <div className='max-w-[800px] bg-white rounded-lg border overflow-hidden'>

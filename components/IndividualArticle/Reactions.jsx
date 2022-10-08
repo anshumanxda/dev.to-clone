@@ -1,8 +1,10 @@
 import React from "react";
-import UnicornSvg from "assets/images/unicorn.svg";
 import { RiHeart2Line } from 'react-icons/ri'
 import { BiBookmarks } from 'react-icons/bi'
-import useArticleReaction from "../../reactQuery/useArticleReactions";
+
+import UnicornSvg from "assets/images/unicorn.svg";
+
+import useArticleReaction from "reactQuery/useArticleReactions";
 
 const Reactions = ({ data }) => {
   const { data: reactionData, isLoading } = useArticleReaction(data?.id);

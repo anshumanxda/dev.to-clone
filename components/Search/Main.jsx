@@ -1,6 +1,7 @@
 import React from 'react'
-import Card from 'components/Card'
 import { useRouter } from "next/router";
+
+import Card from 'components/Home/Card'
 import PodcastCard from './PodcastCard';
 import UserCard from './UserCard';
 

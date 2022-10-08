@@ -1,8 +1,8 @@
-import AppHOC from "components/AppHOC";
-import TopCard from "components/TopCard";
-import Card from "components/Card";
-
 import useLatestPost from "reactQuery/useLatestPost";
+
+import AppHOC from "components/Home/AppHOC";
+import TopCard from "components/Home/TopCard";
+import Card from "components/Home/Card";
 
 export default function Latest() {
   const { data, isLoading } = useLatestPost();

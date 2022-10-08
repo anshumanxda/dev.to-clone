@@ -15,6 +15,8 @@ import CodeOfConductSvg from "assets/images/codeOfConduct.svg";
 import PrivacyPolicySvg from "assets/images/privacyPolicy.svg";
 import TermsOfUseSvg from "assets/images/termsOfUse.svg";
 
+const url = "https://dev.to/";
+
 export const SIDEBAR_DATA = [
   {
     title: "Home",
@@ -34,7 +36,7 @@ export const SIDEBAR_DATA = [
   {
     title: "Podcasts",
     icon: <PodcastSvg />,
-    link: "/",
+    link: `${url}pod`,
   },
   {
     title: "Videos",
@@ -44,56 +46,56 @@ export const SIDEBAR_DATA = [
   {
     title: "Tags",
     icon: <TagsSvg />,
-    link: "/",
+    link: `${url}tags`,
   },
   {
     title: "FAQ",
     icon: <FaqSvg />,
-    link: "/",
+    link: `${url}faq`,
   },
   {
     title: "Forem Shop",
     icon: <ForemShopSvg />,
-    link: "/",
+    link: "https://shop.forem.com/",
   },
   {
     title: "Sponsors",
     icon: <SponsorsSvg />,
-    link: "/",
+    link: `${url}sponsorships`,
   },
   {
     title: "About",
     icon: <AboutSvg />,
-    link: "/",
+    link: `${url}about`,
   },
   {
     title: "Contact",
     icon: <ContactSvg />,
-    link: "/",
+    link: `${url}contact`,
   },
   {
     title: "Guide",
     icon: <GuidesSvg />,
-    link: "/",
+    link: `${url}guides`,
   },
   {
     title: "Software Comparisons",
     icon: <SoftwareComparisonsSvg />,
-    link: "/",
+    link: `${url}software-comparisons`,
   },
   {
     title: "Code of Conduct",
     icon: <CodeOfConductSvg />,
-    link: "/",
+    link: `${url}code-of-conduct`,
   },
   {
     title: "Privacy Policy",
     icon: <PrivacyPolicySvg />,
-    link: "/",
+    link: `${url}privacy`,
   },
   {
     title: "Terms of Use",
     icon: <TermsOfUseSvg />,
-    link: "/",
+    link: `${url}terms`,
   },
 ];

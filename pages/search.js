@@ -1,11 +1,12 @@
 import React from "react";
 import { useRouter } from "next/router";
+
+import useSearch from "reactQuery/useSearch";
+
 import Top from "components/Search/Top";
 import Navbar from "components/Navbar";
 import Sidebar from "components/Search/Sidebar";
 import Main from "../components/Search/Main";
-
-import useSearch from "reactQuery/useSearch";
 
 const Search = () => {
   const router = useRouter();
