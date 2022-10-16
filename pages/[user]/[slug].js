@@ -1,4 +1,5 @@
 import { useRouter } from "next/router";
+import Head from "next/head";
 
 import useIndividualArticle from "reactQuery/useIndividualArticle";
 
@@ -12,10 +13,15 @@ const IndividualPost = () => {
   const { user, slug } = router.query;
   const { data, isLoading } = useIndividualArticle(user, slug);
   return (
-    <div className={style.container}>
-      <Navbar />
-      <InividualArticle data={data} isLoading={isLoading} />
-    </div>
+    <>
+      <Head>
+        <title>{data?.data?.title}</title>
+      </Head>
+      <div className={style.container}>
+        <Navbar />
+        <InividualArticle data={data} isLoading={isLoading} />
+      </div>
+    </>
   );
 };
 
