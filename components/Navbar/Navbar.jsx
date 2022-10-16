@@ -1,6 +1,7 @@
 import Link from 'next/link'
 import React, { useState } from 'react'
 import { RiNotification3Line, RiUserSmileLine } from 'react-icons/ri'
+import { GiHamburgerMenu } from 'react-icons/gr'
 import { useRouter } from 'next/router'
 
 const Navbar = () => {
@@ -14,11 +15,11 @@ const Navbar = () => {
   return (
     <div className='border-b pb-2 bg-white fixed top-0 left-0 right-0 z-10 md:mx-3 px-3'>
       <div className='flex justify-between items-center pt-3 w-full md:max-w-[1280px]  mx-auto'>
-        <div className='flex gap-5 items-center'>
+        <div className='flex gap-5 items-center flex-1'>
           <Link href='/'>
             <img className='cursor-pointer h-10' src="https://dev-to-uploads.s3.amazonaws.com/uploads/logos/resized_logo_UQww2soKuUsjaOGNB38o.png" alt="" />
           </Link>
-          <form onSubmit={onSubmit}>
+          <form className='flex-1 mr-1' onSubmit={onSubmit}>
             <input value={search} onChange={(e) => setSearch(e.target.value)} className='input-box' type="text" placeholder='Search....' />
           </form>
         </div>

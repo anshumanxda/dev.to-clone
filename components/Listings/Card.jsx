@@ -18,14 +18,14 @@ const Card = ({ data, openModal, setDataForModal }) => {
   return (
     <div
       ref={ref}
-      className={`bg-white px-6 py-6 rounded-md border`}
+      className={`bg-white lg:px-6 px-5 py-3 lg:py-6 rounded-md border`}
       style={{
         gridRowEnd: `span ${Math.ceil((height + 2) / 20)} `,
       }}
     >
       <h3
         onClick={handleTitleClick}
-        className="text-[24px] cursor-pointer text-gray-700 font-semibold"
+        className="text-[18px] cursor-pointer text-gray-700 font-semibold"
       >
         {data?.title}
       </h3>
@@ -42,9 +42,9 @@ const Card = ({ data, openModal, setDataForModal }) => {
           </p>
         ))}
       </div>
-      <div className="content listing  text-gray-600 text-[16px] ">
+      {/* <div className="content listing  text-gray-600 text-[16px] ">
         {parser(data?.processed_html)}
-      </div>
+      </div> */}
 
       <div className="flex gap-3 items-center mt-4">
         <div className="w-[30px] h-[30px] rounded-full border overflow-hidden">

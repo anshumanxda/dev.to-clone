@@ -9,7 +9,7 @@ const Sidebar = () => {
   const { asPath } = router;
 
   return (
-    <div className="max-w-[240px]">
+    <div className="max-w-[240px] hidden md:block">
       <input
         type="text"
         className="input-box max-w-[100%] mb-3"

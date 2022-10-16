@@ -6,7 +6,7 @@ const Main = ({ data }) => {
   return (
     <div className='max-w-[800px] bg-white rounded-lg border overflow-hidden'>
       <img src={data?.cover_image} alt="" />
-      <div className='mx-auto px-20'>
+      <div className='mx-auto px-3 lg:px-20'>
         <div className='flex gap-2 mt-9 mb-4 items-center'>
           <img className='w-[40px] h-[40px] rounded-full' src={data?.user?.profile_image_90} alt="" />
           <div>
@@ -18,19 +18,19 @@ const Main = ({ data }) => {
             </p>
           </div>
         </div>
-        <h2 className="text-[48px] font-bold  leading-[55px] ">{data?.title}</h2>
+        <h2 className="text-[32px]  lg:text-[48px] font-bold  lg:leading-[55px] ">{data?.title}</h2>
         <div className="flex gap-2">
           {data?.tags?.map((item, index) => (
             <p
               key={index}
-              className="text-base text-gray-600 hover:bg-gray-200 py-1 px-2 rounded-md cursor-pointer "
+              className=" text-sm lg:text-base text-gray-600 hover:bg-gray-200 py-1 px-2 rounded-md cursor-pointer "
             >
               #{item}
             </p>
           ))}
         </div>
 
-        <div className={`content my-10`}>
+        <div className={`content my-3 lg:my-10`}>
           {parser(data?.body_html)}
         </div>
       </div>

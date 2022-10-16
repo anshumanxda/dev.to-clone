@@ -4,7 +4,7 @@ import { useRouter } from "next/router";
 import useSearch from "reactQuery/useSearch";
 
 import Top from "components/Search/Top";
-import Navbar from "components/Navbar";
+import Navbar from "components/Navbar/Navbar";
 import Sidebar from "components/Search/Sidebar";
 import Main from "../components/Search/Main";
 
@@ -17,7 +17,7 @@ const Search = () => {
       <Navbar />
       <div className="max-w-[1000px] mx-auto mt-[80px]">
         <Top searchedText={q} sort={sort} />
-        <div className="flex gap-5 mt-3">
+        <div className="md:flex gap-5 mt-3">
           <Sidebar type={type} />
           <Main data={data} isLoading={isLoading} />
         </div>

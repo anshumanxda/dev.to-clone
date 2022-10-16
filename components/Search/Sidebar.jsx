@@ -7,7 +7,7 @@ const Sidebar = ({ }) => {
   const { q, type, sort } = router.query
   return (
     <div className='w-[240px]'>
-      <ul>
+      <ul className=' flex md:block'>
         <Link href={`/search/?q=${q}&type=Article&sort=${sort}`}>
           <li className={`search-sidebar ${type === undefined || type === 'Article' ? "bg-white font-bold" : ""}`}>Posts</li>
         </Link>

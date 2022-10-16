@@ -2,7 +2,7 @@ import { useRouter } from "next/router";
 
 import useIndividualArticle from "reactQuery/useIndividualArticle";
 
-import Navbar from "components/Navbar";
+import Navbar from "components/Navbar/Navbar";
 import InividualArticle from "../../components/IndividualArticle/IndividualArticle";
 
 import style from "../../styles/Article.module.css";

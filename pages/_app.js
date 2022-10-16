@@ -5,7 +5,7 @@ function MyApp({ Component, pageProps }) {
   const queryClient = new QueryClient();
   return (
     <QueryClientProvider client={queryClient}>
-      <div className="mx-4">
+      <div className="lg:mx-4">
         <Component {...pageProps} />
       </div>
     </QueryClientProvider>

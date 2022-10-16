@@ -12,7 +12,7 @@ const Main = ({ isLoading, data }) => {
     <>{!isLoading ? (
       <div className="flex-1">
         {data?.data?.result?.map((item, index) => {
-          if (type === 'Article' || type === undefined) return <Card key={index} data={item} search />
+          if (type === 'Article' || type === undefined) return <Card key={index} data={item} />
           if (type === 'PodcastEpisode') return <PodcastCard key={index} data={item} />
           if (type === 'User') return <UserCard key={index} data={item} />
         })}

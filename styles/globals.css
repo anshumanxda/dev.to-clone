@@ -149,3 +149,25 @@ body {
 .ReactModal__Overlay--before-close {
   opacity: 0;
 }
+
+@media screen and (max-width: 480px) {
+  .content p {
+    font-size: 15px;
+    margin-bottom: 12px;
+  }
+
+  .content h2 {
+    font-size: 22px;
+    font-weight: 600;
+    margin-block: 6px;
+  }
+
+  .content h3 {
+    font-size: 18px;
+    font-weight: 600;
+    margin-block: 6px;
+  }
+  .content img {
+    margin: 0 auto;
+  }
+}
