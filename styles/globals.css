@@ -170,4 +170,7 @@ body {
   .content img {
     margin: 0 auto;
   }
+  .content pre {
+    max-width: 100vw;
+  }
 }
